@@ -1,0 +1,62 @@
+{
+  "list": {
+    "code": 200,
+    "success": true,
+    "errMsg": "网络请求超时",
+    "list": [
+      {
+        "areaName": "df",
+        "proiority": "发给",
+        "areaId": 2
+      },
+      {
+        "areaName": "df",
+        "proiority": "发给",
+        "areaId": 4
+      },
+      {
+        "areaName": "df",
+        "proiority": "发给",
+        "areaId": 5
+      },
+      {
+        "areaName": "df",
+        "proiority": "发给",
+        "areaId": 7
+      },
+      {
+        "areaName": "df",
+        "proiority": "发给",
+        "areaId": 6
+      }
+    ]
+  },
+  "list2": [
+    {
+      "name": "abcde",
+      "tel": "123454323",
+      "id": 5
+    },
+    {
+      "id": 4,
+      "name": "你好2121",
+      "tel": "15223810923"
+    },
+    {
+      "areaName": "g",
+      "proiority": "g",
+      "id": 6
+    },
+    {
+      "areaName": "",
+      "proiority": "",
+      "areaId": "2",
+      "id": 7
+    },
+    {
+      "areaName": "ee",
+      "proiority": "4",
+      "id": 8
+    }
+  ]
+}

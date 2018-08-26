@@ -1,0 +1,33 @@
+/* pages/operation/operation.wxss */
+.clear::after{
+  content: "";
+  width:100%;
+  display:block;
+  overflow: hidden;
+}
+.op-label{
+  display: inline-block;
+  float: left;
+  width: 130rpx;
+  padding-left: 20rpx;
+}
+.op-input{
+  display: inline-block;
+  float: left;
+}
+.pt-10{
+  padding-top: 10rpx;
+}
+.btn-area{
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.btn-area button{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  float: left;
+  margin-right: 20rpx;
+}

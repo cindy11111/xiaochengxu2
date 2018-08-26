@@ -1,0 +1,6 @@
+<!--pages/map/map.wxml-->
+<map-route route-info="{{routeInfo}}"></map-route>
+<view class='point'>
+   <input class='sta-point' value="{{startName}}" disabled="true"/> 
+  <input class='end-point' value="{{endName}}" bindblur='eblur' />
+</view>

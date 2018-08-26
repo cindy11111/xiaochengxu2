@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "接入腾讯视频",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "txv-video": "plugin://tencentvideo/video"
+  }
+}

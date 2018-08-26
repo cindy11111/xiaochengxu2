@@ -1,0 +1,17 @@
+<!--pages/audio/audio.wxml-->
+<view>
+<audio class='audio'  poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" duration="{{duration}}" currentTime="{{currentTime}}" poster="{{poster}}" controls loop></audio>
+<view class='audiov'>
+  <image src="{{poster}}" animation="{{animationData}}" />
+  <view class='audiov-v'>
+     <image class='audiovs' wx:if="{{!paused}}" catchtap='stop' src="/images/s.jpg" />
+     <image class='audiovs' wx:if="{{paused}}" catchtap='play' src="/images/e.jpg" /> 
+  </view>
+  
+</view>
+
+<button bindtap='play'>播放</button>
+<button bindtap='stop'>暂停</button>
+<button bindtap='star'>重新播放</button>
+</view>
+

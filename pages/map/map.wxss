@@ -1,0 +1,13 @@
+/* pages/map/map.wxss */
+.point>input{
+  padding-top: 22rpx;
+  padding-left: 100rpx;
+  color:aliceblue;
+}
+.pointb{
+  width: 100%;
+  height: 200rpx;
+  display: block;
+  z-index: 9999;
+  color: #000;
+}

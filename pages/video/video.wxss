@@ -1,0 +1,8 @@
+/* pages/video/video.wxss */
+.section tc{
+  width: 100%;
+  display: block;
+}
+video {
+  width:100%;
+}

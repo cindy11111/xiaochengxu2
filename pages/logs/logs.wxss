@@ -1,0 +1,56 @@
+
+.banner{
+  width: 100%;
+ display: block;
+ height: 340rpx; 
+}
+.block{
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  border-bottom: 1px solid #2e5286;
+}
+.block:last-child{
+  border-bottom: none;
+}
+.block-titl{
+  font-size: 34rpx;
+  line-height: 1.5;
+  position: relative;
+  color:#2e5286;
+  padding:5rpx 40rpx;
+}
+.block-titl::after{
+  content: "";
+  position:absolute;
+  left:20rpx;
+  top:10rpx;
+  width:10rpx;
+  height:40rpx;
+  background-color: #2e5286;
+}
+.block-detail{
+  color: #666;
+  font-size: 30rpx;
+  padding: 10rpx 30rpx 20rpx;
+  display: block;
+  line-height: 1.6;
+}
+.mapnav{
+  position:relative;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:14px;
+  padding-right:14px;
+  box-sizing:border-box;
+  font-size:18px;
+  text-align:center;
+  text-decoration:none;
+  line-height:2.55555556;
+  border-radius:5px;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  color:#000000;
+  background-color:#F8F8F8;
+
+}

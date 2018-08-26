@@ -1,0 +1,35 @@
+/* pages/detail/detail.wxss */
+.widget{
+  width: 98%;
+  display: block;
+  text-align: center;
+  margin: 0rpx auto 0;
+}
+.widget:after{
+  clear: both;
+  overflow: hidden;
+}
+.column{
+  width: 20%;
+  display: inline-block;
+  float: left;
+  border: 1px solid #ccc;
+  box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+}
+.link-column{
+  width: 40%;
+  display: inline-block;
+  float: left;
+  border: 1px solid #ccc;
+  box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+text-align: center;
+}
+.link{
+  float: left;
+  display: inline-block;
+  padding-right: 10rpx;
+}

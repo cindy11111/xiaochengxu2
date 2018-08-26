@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
+   indicator-dots="true"
+   autoplay="true"
+   circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="this.imgUrls">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='items-list'>
+  <view class='pro-item'  wx:key="this.title"  wx:for="{{proList}}" bindtap='toDetail' data-index="{{index}}">
+    <image class='pro-logo' src="/images/logo.jpg"></image>
+    <view class='pro-body'>
+      <view class='pro-title'>{{item.codeValue}}</view>
+      <text class='pro-detail'>{{item.codeValue}}  成日时间：{{item.createTi}}，这是一个真实的数据</text>
+      <view class='pro-footer'>
+        <image class='btn-detail' src='/images/detail.jpg'></image>
+        <button open-type="contact" class='btn-ask'>
+         <image  src='/images/detail.jpg'/>
+        </button>
+       
+      </view>
+    </view>
+  </view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权</button>
+   <textarea bindblur="bindTextAreaBlur" value="{{userInfo}}" auto-height placeholder="用户信息" />
+
+
+
+   <view class='tabview' >
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+      <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">健康</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">情感</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">职场</view>
+      <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">育儿</view>
+      <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">纠纷</view>
+      <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">青葱</view>
+      <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">全部</view>
+      <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">其他</view>
+    </scroll-view>
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+    style="height:{{winHeight}}rpx">
+      <swiper-item wx:for="{{[0,1,2,3,4,5,6,7]}}">
+        <scroll-view scroll-y="true" class="scoll-h" >
+          <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="*this">
+            <view class="item-ans">
+              <view class="avatar">
+                <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+              </view>
+              <view class="expertInfo">
+                <view class="name">欢颜</view>
+                <view class="tag">知名情感博主</view>
+                <view class="answerHistory">134个回答，2234人听过 </view>
+              </view>
+              <navigator url="/pages/askExpert/expertDetail" class="askBtn">问TA</navigator> 
+            </view>
+          </block>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

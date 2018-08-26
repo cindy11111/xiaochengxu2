@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/operation/operation",
+    "pages/map/map",
+    "pages/audio/audio",
+    "pages/video/video",
+    "pages/video2/video2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "风景demo",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.jpg",
+        "selectedIconPath": "images/home0.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "加入",
+        "iconPath": "images/join.jpg",
+        "selectedIconPath": "images/join0.jpg"
+      }
+    ]
+  },
+  "plugins": {
+    "myPlugin": {
+      "version": "1.0.6",
+      "provider": "wx5bc2ac602a747594"
+    },
+    "tencentvideo": {
+      "version": "1.1.1",
+      "provider": "wxa75efa648b60994b"
+    }
+  }
+}

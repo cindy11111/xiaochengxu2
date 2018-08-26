@@ -1,0 +1,33 @@
+<!--logs.wxml-->
+<image class='banner' src="/images/about.jpeg"></image>
+<view class='block'>
+  <view class='block-titl'>关于我们</view>
+  <view class='block-detail'>
+  关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情
+  </view>
+</view>
+<view class='block'>
+  <view class='block-titl'>关于我们</view>
+  <view class='block-detail'>
+  关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情
+  </view>
+</view>
+<view class='block'>
+  <view class='block-titl'>关于我们</view>
+  <view class='block-detail'>
+  关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情关于我们详情
+  </view>
+</view>
+<view>
+<button bindtap='tell'>拨打电话</button>
+ <navigator class='mapnav' url="/pages/map/map" hover-class="navigator-hover">进入腾讯地图</navigator>
+ <!-- <button type='default' bindtap='upimg'>上传图片</button>
+ <image src="{{imgsrc}}" />
+ <text>{{imgsrc}}</text> -->
+ <!--index.wxml-->
+<button style="margin:30rpx;" bindtap="chooseimage">获取图片</button>
+<image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100rpx; height: 100rpx;border-radius:50%;"/>
+<navigator class='mapnav' url="/pages/audio/audio" hover-class="navigator-hover">进入音频</navigator>
+<navigator class='mapnav' url="/pages/video/video" hover-class="navigator-hover">进入视频</navigator>
+
+</view>
